@@ -1,0 +1,10 @@
+{
+	"name": "ln_akv_service",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://etlkey8540.vault.azure.net/"
+		}
+	}
+}
