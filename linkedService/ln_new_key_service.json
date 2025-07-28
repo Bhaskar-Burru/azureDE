@@ -1,0 +1,10 @@
+{
+	"name": "ln_new_key_service",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://newkeyvalutservice.vault.azure.net/"
+		}
+	}
+}
