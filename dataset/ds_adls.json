@@ -1,0 +1,41 @@
+{
+	"name": "ds_adls",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "First_Health_Camp_Attended.csv",
+				"folderPath": "health_care_input",
+				"fileSystem": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Patient_ID",
+				"type": "String"
+			},
+			{
+				"name": "Health_Camp_ID",
+				"type": "String"
+			},
+			{
+				"name": "Donation",
+				"type": "String"
+			},
+			{
+				"name": "Health_Score",
+				"type": "String"
+			}
+		]
+	}
+}
